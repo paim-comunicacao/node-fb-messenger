@@ -1,5 +1,5 @@
 {
-  "name": "fb-messenger",
+  "name": "fb-messenger-paim",
   "version": "1.2.0",
   "description": "Facebook Messenger Platform API",
   "main": "lib/index.js",
