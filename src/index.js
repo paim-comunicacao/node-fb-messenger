@@ -133,7 +133,6 @@ class FBMessenger {
       method: 'GET',
       uri: `https://graph.facebook.com/v2.8/me`,
       qs: {
-        id,about,name,picture,birthday
         fields: 'id,about,name,picture,birthday',
         access_token: this.token
       },
