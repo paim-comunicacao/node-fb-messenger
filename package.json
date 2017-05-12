@@ -17,7 +17,7 @@
     "send",
     "fb"
   ],
-  "author": "Diego Rodriguez Baquero",
+  "author": "Heitor Ehlert Glockner",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DiegoRBaquero/node-fb-messenger.git"
+    "url": "https://github.com/paim-comunicacao/node-fb-messenger"
   },
   "babel": {
     "presets": [
