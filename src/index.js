@@ -120,7 +120,7 @@ class FBMessenger {
     }
 
     const req = {
-      url: 'https://graph.facebook.com/v2.6/me/messages',
+      url: 'https://graph.facebook.com/v2.8/me/messages',
       qs: {access_token: this.token},
       method: 'POST',
       json: json
@@ -131,9 +131,10 @@ class FBMessenger {
   getProfile (id, cb) {
     const req = {
       method: 'GET',
-      uri: `https://graph.facebook.com/v2.6/${id}`,
+      uri: `https://graph.facebook.com/v2.8/me`,
       qs: {
-        fields: 'first_name,last_name,profile_pic,locale,timezone,gender',
+        id,about,name,picture,birthday
+        fields: 'id,about,name,picture,birthday',
         access_token: this.token
       },
       json: true
@@ -186,7 +187,7 @@ class FBMessenger {
   sendThreadSettingsMessage (pageId, jsonObject, cb) {
     const req = {
       method: 'POST',
-      uri: `https://graph.facebook.com/v2.6/${pageId}/thread_settings`,
+      uri: `https://graph.facebook.com/v2.8/${pageId}/thread_settings`,
       qs: {
         access_token: this.token
       },
